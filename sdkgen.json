@@ -1,7 +1,7 @@
 {
   "type": "client-python",
   "require": {
-    "sdkfabric/twilio": {
+    "sdkfabric/slack": {
       "target": "./src/sdk"
     }
   }
