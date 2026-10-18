@@ -14,5 +14,21 @@ from sdk.client import Client
 
 client = Client.build("[access_token]")
 
-# No sdkgen.lock found to generate usage examples.
+# Deletes a message from a channel.
+response = client.chat().delete(Delete_Message_Request())
+
+# Retrieves a permalink URL for a specific existing message.
+response = client.chat().getPermalink("channel", "message_ts")
+
+# Sends an ephemeral message to a user in a channel.
+response = client.chat().postEphemeral(Post_Ephemeral_Request())
+
+# Sends a message to a channel.
+response = client.chat().postMessage(Post_Message_Request())
+
+# Schedules a message to be sent to a channel at a future time.
+response = client.chat().scheduleMessage(Schedule_Message_Request())
+
+# Updates a message in a channel.
+response = client.chat().update(Update_Message_Request())
 ```
